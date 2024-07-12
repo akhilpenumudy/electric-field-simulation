@@ -176,6 +176,10 @@ const ElectricFieldSimulation = () => {
     };
 
     render();
+
+    if (window.MathJax) {
+      window.MathJax.typesetPromise();
+    }
   }, [charges]);
 
   const handleCanvasClick = (e) => {
@@ -234,7 +238,7 @@ const ElectricFieldSimulation = () => {
           textAlign: "center",
         }}
       >
-        Akhil Penumudy
+        Akhil Penumudy • 2024 • Final: Physics Project
       </p>
       <canvas
         ref={canvasRef}
@@ -265,6 +269,65 @@ const ElectricFieldSimulation = () => {
       >
         🔵 Negitive charge 🔴 Positive charge
       </p>
+
+      <div
+        style={{
+          maxWidth: "800px",
+          margin: "auto",
+          padding: "20px",
+          textAlign: "left",
+        }}
+      >
+        <h2>Important Formulas Used in This Simulation:</h2>
+        <ol>
+          <li>
+            <strong>Coulomb's Law:</strong>
+            <p>{"\\[F = k \\frac{q_1 q_2}{r^2}\\]"}</p>
+            <p>
+              where F is the force, k is Coulomb's constant, q₁ and q₂ are the
+              magnitudes of the charges, and r is the distance between them.
+            </p>
+          </li>
+          <li>
+            <strong>Electric Field Strength:</strong>
+            <p>{"\\[E = k \\frac{q}{r^2}\\]"}</p>
+            <p>
+              where E is the electric field strength, k is Coulomb's constant, q
+              is the source charge, and r is the distance from the charge.
+            </p>
+          </li>
+          <li>
+            <strong>Electric Field Components:</strong>
+            <p>
+              {
+                "\\[E_x = E \\frac{x - x_0}{r}, \\quad E_y = E \\frac{y - y_0}{r}\\]"
+              }
+            </p>
+            <p>
+              where E<sub>x</sub> and E<sub>y</sub> are the x and y components
+              of the electric field, (x, y) is the point where the field is
+              calculated, and (x₀, y₀) is the position of the charge.
+            </p>
+          </li>
+          <li>
+            <strong>Electric Potential:</strong>
+            <p>{"\\[V = k \\frac{q}{r}\\]"}</p>
+            <p>
+              where V is the electric potential, k is Coulomb's constant, q is
+              the source charge, and r is the distance from the charge.
+            </p>
+          </li>
+          <li>
+            <strong>Superposition Principle:</strong>
+            <p>{"\\[E_{total} = \\sum E_i, \\quad V_{total} = \\sum V_i\\]"}</p>
+            <p>
+              The total electric field or potential at any point is the vector
+              sum of the fields or scalar sum of the potentials due to
+              individual charges.
+            </p>
+          </li>
+        </ol>
+      </div>
     </div>
   );
 };
