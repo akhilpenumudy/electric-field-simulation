@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/electric-field-simulation/static/css/main.e6c13ad2.css",
+    "main.js": "/electric-field-simulation/static/js/main.c5f02e80.js",
+    "static/js/453.fe5c8b78.chunk.js": "/electric-field-simulation/static/js/453.fe5c8b78.chunk.js",
+    "index.html": "/electric-field-simulation/index.html",
+    "main.e6c13ad2.css.map": "/electric-field-simulation/static/css/main.e6c13ad2.css.map",
+    "main.c5f02e80.js.map": "/electric-field-simulation/static/js/main.c5f02e80.js.map",
+    "453.fe5c8b78.chunk.js.map": "/electric-field-simulation/static/js/453.fe5c8b78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c5f02e80.js"
+  ]
+}
