@@ -26,7 +26,7 @@ User Interface Design: Creating an intuitive, interactive interface for scientif
 Problem-Solving: Addressing challenges in real-time computation and rendering of physics simulations.
 Project Management: Balancing theoretical accuracy with performance and user experience considerations.
 
-## How to Run
+## How to locally Run
 
 Clone the repository: git clone [repository-url]
 Navigate to the project directory: cd interactive-electric-field-simulation
